@@ -12,7 +12,7 @@ Before you begin, make sure you have the following installed on your system:
 - Docker
 - Minikube
 - kubectl
-
+```
 ## Setup
 
 1. Clone this repository:
@@ -26,7 +26,7 @@ Before you begin, make sure you have the following installed on your system:
 
 3. Create a Dockerfile for your application (`main.py`) and build the Docker image:
 
-4. Set up Docker Compose to manage your services. Example `docker-compose.yml`:
+4. Set up Docker Compose to manage your services.:
 
 
 
@@ -35,15 +35,13 @@ Before you begin, make sure you have the following installed on your system:
    ```
 5. Test your services locally using Docker Compose:
 
-   ```bash
-   docker-compose -f docker-compose.yaml down
-   ```
  Access the scrapper service at http://localhost:8080 http://localhost:9095/metrics and Prometheus at http://localhost:9090.
 
 
 
 
 6. Push your Docker images to Docker Hub:
+This is my username (iamrishikesh) of the docker registry.
 
    ```bash
    docker push iamrishikesh/app:latest
